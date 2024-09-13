@@ -1,0 +1,365 @@
+body {
+    overflow: auto;
+}
+
+@media (max-width: 768px) {
+    body {
+        overflow: auto;
+    }
+    .w-50 {
+        width: 100%!important;
+    }
+}
+
+#myDIV1 {
+    display: none;
+}
+
+#hiddenDiv {
+    display: none;
+}
+#questions{
+    display: none;
+}
+
+#form {
+    display: none;
+}
+
+#show_h {
+    display: none;
+}
+
+#div14 {
+    display: none;
+}
+
+.text-decoration-none:hover {
+    text-decoration: none!important;
+}
+
+#thankyou {
+    display: none;
+}
+
+#otp {
+    display: none;
+    
+}
+
+#formDIV {
+    max-height: 520px;
+}
+
+.badge {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAq9JREFUOBGlVU1IVFEUPue8azPOKOqoUUkGIUISmpCmoCmYE5a5shGDFrWqXRQm/a0CyxZug9lEYYtxQioJpsmYoo1/UZmtKzfVjGKRDjrOvNN9A+/NnUnN6sLjfuec7/vunbn3nYewxmBmjLjr2lDXu2W5HBDLGNgGDF8RYFLGI0W79/nR613NlMt6+oi01nWArt+QBhXplYwI8SMRnC8KTjxUK2mG4UO1V5D5OgOk5VVBJtaQTheOjt8x88IEkZbafvlTL0qzTQ9EeOmivCFVQEYQaa1vAuAetSDJuvyv7gnSGrJynQVb7DYXkmgGwrsGzzArooKjGAwupek41CwWvHPT8XD2nlQBF0HAka1PJ16lcikUdtccLIaC15lmBgPjIVs7r/DIUmAnxN67kipNI3dhcPxZymLzSIDOJ0AwONtnQZREITZV/Mblm/4nM2NZwQx7zfVt1XNgr57vB5+ZSc0tfYvvUtG6aEAgcKl6spoGH9aiy4Ur18qrOUSqSJ6ymvw/rNuJAWdVk4VEVpUa/w1mxDDJ+zRjih4t74KO+cMnzVidC/OduZmP1E6rHAT6lLw2Kwl4fOtnJT5ZKU3WNSL3uMe/4Um7+6IH4qyPWYaILLIc20iD+sDZHw2fTTODkGAervV3NlrkDNDSt1yeAB5OT3Mo2IPhZBOoGTrexKyHZHtSmgLKVw8GBZA3B3mG8uzx7wuxMsCEB2Mlp7K/nNtOq8WWJwmqH+11jFkG+32d/SCbg8X4A0DdAdnfzoCIVhnv9cDzyzkXDIl1baa6HvQS0VW5K/VarmvLFIXojgFezQ8MNl5yWo3F2qGprPF5jgHoN2Ur27DByl3NA9K1SY//tqk15t8MjaTxCagb6mrTQe+W2y2XJOMTYEeGMCO8JcaAg/D+C49/0eCr4xdWP+SQWHT2AwAAAABJRU5ErkJggg==);
+    background-repeat: no-repeat;
+    background-position: 10px 50%, 0px 0px;
+    border-color: rgb(194, 194, 193);
+    color: rgb(94, 94, 94);
+    margin-bottom: 15px;
+}
+/*form styles*/
+
+#msform {
+    text-align: center;
+    position: relative;
+    margin-top: 30px;
+}
+
+#msform fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 0px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+   
+    /*stacking fieldsets above each other*/
+   
+}
+
+
+
+
+/*Hide all except first fieldset*/
+
+#msform fieldset:not(:first-of-type) {
+    display: none;
+}
+/*inputs*/
+
+#msform input,
+#msform textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    margin-bottom: 10px;
+    width: 60%;
+    box-sizing: border-box;
+    color: #2C3E50;
+    font-size: 13px;
+}
+
+
+#msform textarea {
+    resize: vertical;
+    min-height: 50px
+}
+
+#msform select {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    margin-bottom: 10px;
+    width: 60%;
+    box-sizing: border-box;
+    color: #2C3E50;
+    font-size: 13px;
+}
+
+#msform input:focus,
+#msform textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #0194a8;
+    outline-width: 0;
+    transition: All 0.5s ease-in;
+    -webkit-transition: All 0.5s ease-in;
+    -moz-transition: All 0.5s ease-in;
+    -o-transition: All 0.5s ease-in;
+}
+/*buttons*/
+
+#msform .action-button {
+    width: 120px;
+    background: #0194a8;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 12px 5px;
+    margin: 10px 5px;
+}
+
+#msform .action-button:hover,
+#msform .action-button:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #0194a8;
+}
+
+#msform .action-button-previous {
+    width: 120px;
+    background: gray;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 12px 5px;
+    margin: 10px 5px;
+}
+
+#msform .action-button-previous:hover,
+#msform .action-button-previous:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #0194a8;
+}
+/*headings*/
+
+.fs-title {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #2C3E50;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.fs-subtitle {
+    font-weight: normal;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 20px;
+}
+/*progressbar*/
+
+#progressbar {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    overflow: hidden;
+    /*CSS counters to number the steps*/
+    counter-reset: step;
+}
+
+#progressbar li {
+    list-style-type: none;
+    color: lightgray;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    width: 33.33%;
+    float: left;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+.svg1 {
+    width: 80px;
+}
+
+#progressbar li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 36px;
+    height: 36px;
+    line-height: 34px;
+    display: block;
+    font-size: 16px;
+    color: #333;
+    background: lightgray;
+    border-radius: 25px;
+    margin: 0 auto 10px auto;
+}
+/*progressbar connectors*/
+
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    left: -50%;
+    top: 18px;
+    z-index: -1;
+    /*put it behind the numbers*/
+}
+
+#progressbar li:first-child:after {
+    /*connector not needed before the first step*/
+    content: none;
+}
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background: #0194a8;
+    color: white;
+}
+/* Not relevant to this form */
+
+.dme_link {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#show_h label {
+    text-align: left;
+}
+
+.dme_link a {
+    background: #FFF;
+    font-weight: bold;
+    color: #ee0979;
+    border: 0 none;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 5px 25px;
+    font-size: 12px;
+}
+
+.dme_link a:hover,
+.dme_link a:focus {
+    background: #C5C5F1;
+    text-decoration: none;
+}
+
+.btn.disabled,
+.btn:disabled,
+fieldset:disabled .btn {
+    background-color: lightgrey;
+    color: gray;
+    border: 0px !important;
+}
+
+.thanksmessage{
+    padding-left: 0px!important;
+}
+
+#full_h .mobile-hide{
+    height: 90vh!important;
+}
+
+
+
+@media screen and (max-width:1440px) {
+    #msform fieldset {
+       padding-left:25%;
+       
+        /*stacking fieldsets above each other*/
+       
+    }
+
+    #full_h .mobile-hide{
+        height: 88vh!important;
+    }
+
+ 
+}
+
+@media screen and (max-width:1440px) {
+    #msform fieldset {
+       padding-left:25%;
+       
+        /*stacking fieldsets above each other*/
+       
+    }
+
+    #full_h .mobile-hide{
+        height: 88vh!important;
+    }
+
+ 
+}
+
+@media screen and (max-width:1024px) {
+    #msform fieldset {
+       padding-left:15%;
+       
+        /*stacking fieldsets above each other*/
+       
+    }
+
+ 
+}
+
+@media screen and (max-width:768px) {
+    #msform fieldset {
+       padding: 0px 10%;
+       
+        /*stacking fieldsets above each other*/
+       
+    }
+
+    #msform select {
+    
+    width: 80%;
+    
+}
+    .w-100{
+       width: -webkit-fill-available!important;
+    }
+}
+
+@media screen and (max-width:500px) {
+    #msform fieldset {
+       
+        padding: 0px 5%;
+      
+    }
+
+    .thanksmessage{
+        padding-left: 20px!important;
+    }
+}
